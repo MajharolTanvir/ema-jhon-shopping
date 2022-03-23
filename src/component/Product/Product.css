@@ -1,0 +1,14 @@
+.card-footer{
+    background: #FFE0B3;
+}
+.card-footer button{
+    background-color: #FFE0B3;
+}
+.card-footer button:hover{
+    background-color: orange;
+    transition: 0.5s;
+}
+.product:hover{
+    border: 2px solid orange;
+    transition: 0.3s;
+}
