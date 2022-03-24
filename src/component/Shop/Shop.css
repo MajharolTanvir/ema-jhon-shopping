@@ -1,3 +1,7 @@
 .order {
+    position: fixed;
+    right: 0;
+    top: 59px;
+    height: 100%;
     background: #FFE0B3;
 }

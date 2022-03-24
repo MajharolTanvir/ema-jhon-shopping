@@ -17,7 +17,7 @@ const Product = ({ product, addToCart }) => {
                 </div>
             </div>
             <div className="card-footer p-0">
-                <button onClick={addToCart} className='w-100 border-0 py-2'>Add to cart<FontAwesomeIcon className='ps-2' icon={faShoppingCart}></FontAwesomeIcon></button>
+                <button onClick={() => { addToCart(product) }} className='w-100 border-0 py-2'>Add to cart<FontAwesomeIcon className='ps-2' icon={faShoppingCart}></FontAwesomeIcon></button>
             </div>
         </div>
     );
