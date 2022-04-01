@@ -55,7 +55,7 @@ const Shop = () => {
                 </div>
                 <div className="col-4 col-md-2 col-xl-2 order">
                     <h5 className='my-4 text-center'>Order summery</h5>
-                    <Cart cart={cart}></Cart>
+                    <Cart cart={cart}>Review Order</Cart>
                 </div>
             </div>
         </div>

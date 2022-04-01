@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, children }) => {
     let total = 0;
     let shipping = 0;
     let quantity = 0;
@@ -22,7 +23,8 @@ const Cart = ({ cart }) => {
             </div>
             <div>
                 <button className='w-100 bg-danger border-0 py-2 text-white rounded-3 my-3'>Clean cart</button>
-                <button className='w-100 bg-warning border-0 py-2 text-white rounded-3 my-3'>Review Order</button>
+                <Link to='/order'>
+                    <button className='w-100 bg-warning border-0 py-2 text-white rounded-3 my-3'>{children}</button></Link>
             </div>
         </div>
     );

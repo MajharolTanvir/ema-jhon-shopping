@@ -4,7 +4,6 @@ import './Review.css'
 import React from 'react';
 
 const Review = ({ review, remove }) => {
-    console.log(review);
     return (
         <div className='row border mx-5 border-1 p-2 align-items-center mb-3'>
             <div className="col-xl-2 col-lg-2  col-md-2 col-sm-2 col-4">
