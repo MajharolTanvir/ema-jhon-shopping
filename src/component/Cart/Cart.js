@@ -15,7 +15,6 @@ const Cart = ({ cart }) => {
         <div>
             <div>
                 <p>Selected items:{quantity}</p>
-                console.log(quantity);
                 <p>Total price: ${total}</p>
                 <p>Total Shipping Charge: ${shipping}</p>
                 <p>Tax: ${tax}</p>

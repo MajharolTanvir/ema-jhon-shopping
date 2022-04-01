@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../images/Logo.svg'
+import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div className="container">
                 <a className="navbar-brand" href="/logo"><img src={logo} alt="" width="100" height="30"></img></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,16 +14,13 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/shop">Shop</a>
+                            <CustomLink className="nav-link" aria-current="page" to="/">Shop</CustomLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/order">Order</a>
+                            <CustomLink className="nav-link" to="/order">Order review</CustomLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="review">Order review</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/inventory">Inventory</a>
+                            <Link className="nav-link" to="/inventory">Inventory</Link>
                         </li>
                     </ul>
                 </div>
