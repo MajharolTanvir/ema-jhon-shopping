@@ -5,3 +5,9 @@
     height: 100%;
     background: #FFE0B3;
 }
+.pagination Button {
+    background-color: aquamarine;
+    color: black;
+    border: 1px solid aquamarine;
+    margin: 20px 5px;
+}
